@@ -18,7 +18,7 @@ _putchar('0');
 return (0);
 }
 else
-}
+{
 _putchar('-');
 return (-1);
 }
