@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _islower - checks if a character is alphabetic
+ * _isalpha - checks if a character is alphabetic
  * @c: character code to check
  *
- * Return: 1 if c is 'a'..'z', otherwise 0
+ * Return: 1 if c is a letter (lowercase or uppercase), 0 otherwise
  */
 int _isalpha(int c)
 {
-if (c >= 'a' && c <= 'z')
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 return (1);
 else
 return (0);
