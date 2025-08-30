@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,7 +13,7 @@ if (n <= 98)
 {
 for (; n <= 98; n++)
 {
-  if (n != 98)
+if (n != 98)
 printf("%d, ", n);
 else
 printf("%d\n", n);
