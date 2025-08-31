@@ -7,8 +7,6 @@
  */
 void print_numbers(void)
 {
-int i;
-for (i >= '0' && i <= '9')
-_putchar(i + '0');
+write(1, "0123456789" , 10);
 _putchar('\n');
 }
