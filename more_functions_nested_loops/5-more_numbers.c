@@ -4,16 +4,13 @@
  *
  * Return: nothing
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
-int i, num;
+int i, j;
+char line[] "01234567891011121314\n"
 for (i = 0; i < 10; i++)
 {
-for (num = 0; num <= 14; num++)
-if (num >= 10)
-_putchar('1');
-_putchar((num % 10) + '0');
-}
-_putchar('\n');
+for (j = 0; line[j] != '\0'; j++)
+_putchar(line[j]);
 }
 }
