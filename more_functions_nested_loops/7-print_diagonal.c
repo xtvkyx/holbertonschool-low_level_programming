@@ -1,19 +1,20 @@
-include "main.h"
+#include "main.h"
 /**
- * print_square - a function that prints a square
- * @size: the size of the square
+ * print_diagonal - a function that draws a diagonal line in the terminal
+ * @n: number of times the character _ should be printed
  * Return: nothing
  */
-void print_square(int size)
+void print_diagonal(int n)
 {
-int i, j;
-if (size > 0)
-{	
-for (i = 0; i < size; i++)
+int i = 0, int j = 0;
+if (n > 0)
 {
-for (j = 0; j < size; j++)
-_putchar('#');
-_putchar('\n'); 
+for (; i < n; i++)
+{
+for (j = 0; j < i; j++)
+_putchar(' ');
+_putchar(92);
+_putchar('\n');
 }
 }
 else
