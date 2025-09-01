@@ -1,48 +1,35 @@
 #include "main.h"
-
-static void print_unsigned(unsigned int m);
+void print_integer(int m);
 
 /**
- * print_number - prints an integer using _putchar
- * @n: integer to print
- * Return: nothing
+ * print_number - a function that prints an integer.
+ * @n: An input integer
+ * Return: Nothing
  */
 void print_number(int n)
 {
-	unsigned int m = (unsigned int)n;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		m = -m; /* unsigned negation -> magnitude */
-	}
-
-	print_unsigned(m);
-}
-
-/**
- * print_unsigned - prints a nonnegative integer using _putchar
- * @m: number to print
- * Return: nothing
- */
-static void print_unsigned(unsigned int m)
+if (n == 0)
+_putchar('0');
+else if (n < 0)
 {
-	unsigned int div = 1;
-
-	if (m == 0)
-	{
-		_putchar('0');
-		return;
-	}
-
-	while (m / div >= 10)
-		div *= 10;
-
-	while (div > 0)
-	{
-		_putchar('0' + (m / div));
-		m %= div;
-		div /= 10;
-	}
+_putchar('-');
+print_integer(n * -1);
 }
+else
+print_integer(n);
+}
+/**
+ * print_integer - A function to priting n
+ * @m: an input unsigned integer
+ * Return: Nothing
+ */
+void print_integer(int m)
+{
+int i = 1000000000;
 
+for (; i >= 1; i /= 10)
+if (m / i != 0)
+{
+_putchar((m / i) % 10 + '0');
+}
+}
