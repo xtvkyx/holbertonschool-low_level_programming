@@ -1,5 +1,7 @@
 #include "main.h"
+
 static void print_unsigned(unsigned int m);
+
 /**
  * print_number - prints an integer using only _putchar
  * @n: integer to print
@@ -8,12 +10,13 @@ static void print_unsigned(unsigned int m);
 void print_number(int n)
 {
 unsigned int m = (unsigned int)n;
+
 if (n < 0)
 {
 _putchar('-');
-m = -m; 
+m = -m; /* safe unsigned negation -> magnitude */
 }
-print_unsigned(unsigned int m);
+print_unsigned(m);
 }
 /**
  * print_unsigned - helper that prints a nonnegative integer using _putchar
@@ -23,6 +26,7 @@ print_unsigned(unsigned int m);
 static void print_unsigned(unsigned int m)
 {
 unsigned int div = 1;
+
 if (m == 0)
 {
 _putchar('0');
@@ -37,4 +41,3 @@ m %= div;
 div /= 10;
 }
 }
-
