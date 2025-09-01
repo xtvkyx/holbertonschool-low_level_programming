@@ -11,10 +11,15 @@ unsigned int m = (unsigned int)n;
 if (n < 0)
 {
 _putchar('-');
-m = -m;  /* safe: unsigned negation gives magnitude */
+m = -m; 
 }
-print_unsigned(m);
+print_unsigned(unsigned int m);
 }
+/**
+ * print_unsigned - helper that prints a nonnegative integer using _putchar
+ * @m: number to print
+ * Return: nothing
+ */
 static void print_unsigned(unsigned int m)
 {
 unsigned int div = 1;
