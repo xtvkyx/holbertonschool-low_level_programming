@@ -15,7 +15,7 @@ return;
 if (n < 0)
 {
 _putchar('-');
-print_integer((unsigned int)(- (unsigned int) n));
+print_integer((unsigned int)(-(unsigned int) n));
 }
 else
 {
@@ -32,6 +32,6 @@ void print_integer(unsigned int m)
 unsigned int i = 1;
 while (m / i >= 10)
 i *= 10;
-for (; i>= 1; i /= 10)
+for (; i >= 1; i /= 10)
 _putchar((m / i) % 10 + '0');
 }
