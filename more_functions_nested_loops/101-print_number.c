@@ -13,23 +13,24 @@ _putchar('0');
 else if (n < 0)
 {
 _putchar('-');
-print_integer(n * -1);
+m = (unsigned int)(-n);
 }
 else
-print_integer(n);
+m = (unsigned int)n;
 }
 /**
  * print_integer - A function to priting n
  * @m: an input unsigned integer
  * Return: Nothing
  */
-void print_integer(int m)
+void print_integer(unsigned int m)
 {
-int i = 1000000000;
+unsigned int i = 1000000000;
 
-for (; i >= 1; i /= 10)
-if (m / i != 0)
+while (i >= 1)
 {
+if (m / i != 0 || i == 1)
 _putchar((m / i) % 10 + '0');
+i /= 10;
 }
 }
