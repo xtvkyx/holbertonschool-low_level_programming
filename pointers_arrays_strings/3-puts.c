@@ -1,11 +1,19 @@
 #include "main.h"
 /**
- * puts - prints a string
- * @str: an inpur string
+ * _puts - Write a function that prints a string, followed
+ * by a new line, to stdout
+ * @str: an input string
  *
  * Return: nothing
  */
 void _puts(char *str)
 {
-printf("I do not fear computers. I fear the lack of them - Isaac Asimov.\n");
+int i = 0;
+
+while (str[i] != '\0')
+{
+_putchar(str[i]);
+i++;
+}
+_putchar('\n');
 }
