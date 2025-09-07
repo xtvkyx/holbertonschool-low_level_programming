@@ -12,8 +12,8 @@ char *start = dest;
 while (n--)
 {
 *dest = *src;
-*src++;
 *dest++;
+*src++;
 }
 return (dest);
 }
