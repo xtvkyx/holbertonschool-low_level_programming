@@ -15,5 +15,5 @@ while (n--)
 *src++;
 *dest++;
 }
-return (start);
+return (dest);
 }
