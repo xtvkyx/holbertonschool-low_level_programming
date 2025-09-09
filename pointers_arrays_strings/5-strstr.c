@@ -19,8 +19,8 @@ haystack++;
 needle++;
 }
 if (*needle == '\0')
-return (haystack);
+return (starth);
 haystack = starth + 1;
 }
-return (starth);
+return (NULL);
 }
