@@ -17,10 +17,10 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 while (s1[len1])
-len1++
-while (s2[len2]
-len2++
-if (n >= s2)
+len1++;
+while (s2[len2])
+len2++;
+if (n >= len2)
 n = len2;
 concat_str = malloc(sizeof(char) * (len1 + n + 1));
 if (concat_str == NULL)
