@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * print_strings - a function that prints strings, followed by a new line
- * @separator: An input string to be printed between numbers.
+ * @separator: An input string to be printed between strings
  * @n: number of parameters
  * @...: Other parameters
  * Return: Nothing
@@ -18,7 +18,7 @@ for (i = 0; i < n; i++)
 {
 str = va_arg(args, char *);
 if (str == NULL)
-printf("(nill)");
+printf("(nil)");
 else
 printf("%s", str);
 if (separator != NULL && i < n - 1)
