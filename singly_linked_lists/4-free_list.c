@@ -1,6 +1,9 @@
 #include"lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 /**
- * free_list - A function that frees all elements in a linked list
+ * free_list - A function that frees all elements in a list_t list
  * @head: pointer to head element of list
  * Return: Nothing
  */
