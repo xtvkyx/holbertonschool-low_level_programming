@@ -5,6 +5,7 @@
 /**
  * print_dlistint - a function that prints all the elements of a dlistint_t list.
  * @h: pointer to the head of the list
+ * @str: pointer to string that adds as node
  *
  * Return: the number of nodes
  */
