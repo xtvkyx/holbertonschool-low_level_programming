@@ -4,7 +4,7 @@
 
 /**
 * free_dlistint - a function that frees a dlistint_t list
-* @head: pointer to the head node 
+* @head: pointer to the head node
 */
 void free_dlistint(dlistint_t *head)
 {
